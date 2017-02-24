@@ -2,13 +2,17 @@
 @import "_mixins"
 @import "_colors"
 
+@font-face
+  font-family: 'Heavitas'
+  src: url('../../fonts/Heavitas.ttf') format('truetype')
+
 body
   background-color: $goya-yellow
-  font-family: 'Roboto Condensed', sans-serif
+  @include roboto
   display: block
 
 h1, h2, h3 ,h4
-  font-family: 'Patua One'
+  @include patua
   text-transform: uppercase
 
 h1
@@ -83,7 +87,7 @@ nav
       flex-direction: column
       p
         color: #fff
-        font-family: 'Roboto Condensed'
+        @include roboto
         font-size: 20px
         padding: 30px
         letter-spacing: 1px
@@ -106,7 +110,7 @@ nav
       width: 100%
     h1
       font-size: 50px
-      font-family: 'Heavitas'
+      font-family: 'Heavitas', sans-serif
       color: $goya-green
       &:after
         content: url(../../img/goya.svg)
