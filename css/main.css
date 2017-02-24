@@ -45,9 +45,26 @@ table {
   box-sizing: border-box; }
 
 body {
-  background-color: #ece615;
+  background-color: #e9e216;
   font-family: 'Roboto Condensed', sans-serif;
   display: block; }
+
+h1, h2, h3, h4 {
+  font-family: 'Patua One';
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 40px;
+  margin: 40px 0 10px 0;
+  color: #2a4d87;
+  display: block; }
+  h1:after {
+    content: url(../../img/goya.svg);
+    width: 130px;
+    margin-left: 10px;
+    position: relative;
+    bottom: -5px;
+    display: inline-block; }
 
 .container {
   width: 100%;
@@ -101,45 +118,100 @@ nav {
         nav ul li a:hover {
           color: #fff; }
 
-.recetas {
+.recetas .gallery {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
+  .recetas .gallery .receta {
+    background: #000;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    height: 210px;
+    margin-top: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column; }
+    .recetas .gallery .receta p {
+      color: #fff;
+      font-family: 'Roboto Condensed';
+      font-size: 20px;
+      padding: 30px;
+      letter-spacing: 1px; }
+  .recetas .gallery .big {
+    height: 440px; }
+
+.f-wrap {
+  flex-wrap: wrap; }
 
 .oliva {
   background: url(../../img/bg1.jpg);
   background-size: cover;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 70px; }
   .oliva .oliva-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; }
     .oliva .oliva-wrapper img.aceite {
-      margin-top: -60px; }
+      margin: -65px 0 0 0;
+      max-width: 550px;
+      width: 100%; }
+    .oliva .oliva-wrapper h1 {
+      font-size: 50px;
+      font-family: 'Heavitas';
+      color: #587b38; }
+      .oliva .oliva-wrapper h1:after {
+        content: url(../../img/goya.svg);
+        max-width: 220px;
+        display: block; }
+      .oliva .oliva-wrapper h1 span {
+        display: block; }
+        .oliva .oliva-wrapper h1 span.large {
+          font-size: 60px; }
+        .oliva .oliva-wrapper h1 span.blue {
+          color: #2a4d87; }
   .oliva img.oliva-logo {
     max-width: 272px;
     display: block;
-    padding-top: 25px;
+    padding: 25px 0 40px 0;
     margin: 0 auto; }
 
+.slogan {
+  width: 50%;
+  padding-left: 30px; }
+  .slogan img.goya-one {
+    width: 220px; }
+  .slogan img.goya-two {
+    margin-top: 50px;
+    width: 415px; }
+
+.aceites {
+  width: 60%; }
+
 div[class^="col"] {
-  margin-right: 30px; }
+  padding-right: 20px; }
   div[class^="col"]:last-of-type {
-    margin-right: 0; }
-
-.col-1 {
-  flex: 1; }
-
-.col-2 {
-  flex: 2; }
+    padding-right: 0; }
 
 .col-3 {
-  flex: 3; }
+  width: 100%; }
 
 .col-4 {
-  flex: 4; }
+  width: 40%; }
+
+.col-5 {
+  width: 50%; }
 
 .col-6 {
-  flex: 6; }
+  width: 60%; }
+
+.col-10 {
+  width: 100%; }
