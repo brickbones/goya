@@ -57,6 +57,9 @@ h1, h2, h3, h4 {
   font-family: 'Patua One', cursive;
   text-transform: uppercase; }
 
+a {
+  text-decoration: none; }
+
 h1.heading {
   font-size: 40px;
   margin: 40px 0 10px 0;
@@ -129,7 +132,7 @@ nav {
   display: -webkit-flex;
   display: flex; }
   .recetas .gallery .receta {
-    background: #000;
+    background-color: #2a4d87;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -142,14 +145,24 @@ nav {
     display: flex;
     justify-content: flex-end;
     flex-direction: column; }
+    .recetas .gallery .receta:hover p {
+      background: #2a4d87; }
     .recetas .gallery .receta p {
       color: #fff;
       font-family: 'Roboto Condensed', sans-serif;
       font-size: 20px;
       padding: 30px;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      transition: .3s;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px; }
   .recetas .gallery .big {
     height: 440px; }
+
+.pescado {
+  background-image: url(../../img/pescado.jpg);
+  background-size: cover; }
 
 .f-wrap {
   flex-wrap: wrap; }

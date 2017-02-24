@@ -15,6 +15,9 @@ h1, h2, h3 ,h4
   @include patua
   text-transform: uppercase
 
+a
+  text-decoration: none
+
 h1.heading
   font-size: 40px
   margin: 40px 0 10px 0
@@ -77,7 +80,7 @@ nav
     width: 100%
     @include flex
     .receta
-      background: #000
+      background-color: $goya-blue
       @include roundy(6px)
       height: 210px
       margin-top: 20px
@@ -85,14 +88,22 @@ nav
       @include flex
       justify-content: flex-end
       flex-direction: column
+      &:hover p
+        background: $goya-blue
       p
         color: #fff
         @include roboto
         font-size: 20px
         padding: 30px
         letter-spacing: 1px
+        transition: .3s
+        @include roundy(6px)
     .big
       height: 440px
+
+.pescado
+  background-image: url(../../img/pescado.jpg)
+  background-size: cover
 
 .f-wrap
   flex-wrap: wrap
