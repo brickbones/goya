@@ -147,7 +147,8 @@ nav {
     justify-content: flex-end;
     flex-direction: column; }
     .recetas .gallery .receta:hover p {
-      background: #2a4d87; }
+      background: #2a4d87;
+      cursor: pointer; }
     .recetas .gallery .receta p {
       color: #fff;
       font-family: 'Roboto Condensed', sans-serif;
