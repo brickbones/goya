@@ -20,7 +20,7 @@ a
 
 h1.heading
   font-size: 40px
-  margin: 40px 0 10px 0
+  margin: 50px 0 10px 0
   color: $goya-blue
   display: block
   .olivas
@@ -81,6 +81,7 @@ nav
     @include flex
     .receta
       background-color: $goya-blue
+      background-size: cover
       @include roundy(6px)
       height: 210px
       margin-top: 20px
@@ -103,7 +104,21 @@ nav
 
 .pescado
   background-image: url(../../img/pescado.jpg)
-  background-size: cover
+
+.camarones
+  background-image: url(../../img/camarones.jpg)
+
+.pulpo
+  background-image: url(../../img/pulpo.jpg)
+
+.bacalao
+  background-image: url(../../img/bacalao.jpg)
+
+.salmon
+  background-image: url(../../img/salmon.jpg)
+
+.sierra
+  background-image: url(../../img/sierra.jpg)
 
 .f-wrap
   flex-wrap: wrap
@@ -150,6 +165,49 @@ nav
 
 .aceites
   width: 60%
+
+.aceites-de-oliva
+  background: #fff
+  margin-top: 30px
+  padding: 30px 20px 20px 20px
+  align-items: flex-end
+  @include flex
+  .product
+    @include flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .product-details
+      color: #58595b
+      margin-top: 25px
+      background: #ece9e7
+      padding: 30px 20px
+      @include roundy
+      text-align: center
+      min-height: 256px
+      p
+        line-height: 24px
+        font-size: 14px
+        text-align: justify
+      h2
+        font-family: 'Roboto'
+        font-size: 16px
+        margin-bottom: 35px
+        text-transform: none
+        font-weight: bold
+
+footer
+  margin: 40px 0
+  text-align: center
+  img
+    max-width: 415px
+  p
+    font-family: 'Roboto'
+    font-weight: bold
+    color: $goya-blue
+    line-height: 17px
+    font-size: 14px
+    margin-top: 30px
 
 div[class^="col"]
   padding-right: 20px
