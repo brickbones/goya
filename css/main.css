@@ -313,6 +313,7 @@ div[class^="col"] {
     display: -webkit-flex;
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
     width: 100%;
     padding: 10px 0 12px 0;
     flex-direction: column; }
