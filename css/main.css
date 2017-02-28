@@ -288,6 +288,21 @@ nav {
 .receta-header .sierra {
   background-image: url(../../img/sierra-2.jpg); }
 
+.receta-header .salmon {
+  background-image: url(../../img/salmon-banner.jpg); }
+
+.receta-header .bacalao {
+  background-image: url(../../img/bacalao-banner.jpg); }
+
+.receta-header .pescado {
+  background-image: url(../../img/pescado-banner.jpg); }
+
+.receta-header .pulpo {
+  background-image: url(../../img/pulpo-banner.jpg); }
+
+.receta-header .pulpo {
+  background-image: url(../../img/camarones-banner.jpg); }
+
 .receta-wrapper {
   background: #fff;
   display: -webkit-box;
