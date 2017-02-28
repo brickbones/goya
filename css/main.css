@@ -326,6 +326,7 @@ div[class^="col"] {
       align-items: center;
       flex-direction: column;
       position: absolute;
+      right: 0;
       background: #2a4d87;
       top: 70px; }
       nav ul > :last-child:after {
