@@ -59,7 +59,9 @@ h1, h2, h3, h4 {
   text-transform: uppercase; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #2a4d87;
+  font-weight: bold; }
 
 b {
   font-weight: bold; }
@@ -359,8 +361,20 @@ img.reglas-banner {
 
 .reglas-wrapper {
   background: #fff;
-  height: 700px;
-  width: 100%; }
+  width: 100%;
+  padding: 30px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: #58595b;
+  line-height: 25px; }
+  .reglas-wrapper ul {
+    padding-left: 30px; }
+  .reglas-wrapper li {
+    margin: 15px 0;
+    list-style-type: disc; }
+    .reglas-wrapper li ul {
+      padding-left: 30px;
+      margin: 25px 0; }
 
 footer {
   margin: 40px 0;
