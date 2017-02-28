@@ -10,6 +10,7 @@ body
   background-color: $goya-yellow
   @include roboto
   display: block
+  overflow-x: hidden
 
 h1, h2, h3 ,h4
   @include patua
@@ -210,22 +211,7 @@ footer
     font-size: 14px
     margin-top: 30px
 
-div[class^="col"]
-  padding-right: 20px
-  &:last-of-type
-    padding-right: 0
+.mobile-logo
+  display: none
 
-.col-3
-  width: 100%
-
-.col-4
-  width: 40%
-
-.col-5
-  width: 50%
-
-.col-6
-  width: 60%
-
-.col-10
-  width: 100%
+@import "_responsive"
