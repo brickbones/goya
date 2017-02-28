@@ -416,6 +416,7 @@ div[class^="col"] {
       color: #587b38; }
       .oliva .oliva-wrapper h1:after {
         content: url(../../img/goya.svg);
+        width: 100%;
         max-width: 84px;
         display: block;
         margin: 0 auto; }
