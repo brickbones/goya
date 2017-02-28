@@ -359,7 +359,8 @@ img.reglas-banner {
 
 .reglas-wrapper {
   background: #fff;
-  height: 700px; }
+  height: 700px;
+  width: 100%; }
 
 footer {
   margin: 40px 0;
